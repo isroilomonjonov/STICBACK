@@ -9,8 +9,7 @@ const start = async () => {
   try {
     await db.authenticate();
     await db.sync({
-      // force: true,
-      // alter: true,
+      // force: true
     });
     app.listen(PORT, () => {
       console.log(
